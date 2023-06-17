@@ -1,0 +1,2 @@
+# FinaktivaAzureFunctions
+Azure functions 
