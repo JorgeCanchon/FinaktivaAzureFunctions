@@ -27,7 +27,8 @@ namespace FinaktivaCobro
 
                 string[] nombreParametro = new string[] { };
                 string[] parametro = new string[] { };
-                int rows = new Connect().EjecutarSP("cobrodiario", nombreParametro, parametro);
+                int rowsA = new Connect().EjecutarSP("cobrodiariocompletarprestamo", nombreParametro, parametro);
+                int rowsB = new Connect().EjecutarSP("cobrodiario", nombreParametro, parametro);
 
                 response.WriteString("Cobro diario ejecutado con exito");
                 return response;
